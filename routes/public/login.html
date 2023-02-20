@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="./stylesheets/login.css">
+	<script src="./index.js"></script>
+</head>
+<body>
+	<div class="container">
+		<h1>Login</h1>
+		<form id='login-form' action="http://localhost:3000/users/login" method="POST">
+			<label for="username"><b>Username</b></label>
+			<input type="text" placeholder="Enter Username" name="username" required>
+
+			<label for="password"><b>Password</b></label>
+			<input type="password" placeholder="Enter Password" name="password" required>
+
+			<button type="submit">Login</button>
+		</form>
+		<div class="alternate-page">
+			<p>Don't have an account?</p>
+			<a href="register.html">Register here</a>
+		</div>
+	</div>
+</body>
+</html>
